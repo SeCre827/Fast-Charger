@@ -3,8 +3,6 @@
 This repository is used for NTUA/ECE Software Engineering Project, 2020-2021
 
 * Οικονόμου Ελευθέριος
-* Γιάννης Βαλαγιανόπουλος
-* Γιώργος Παγώνης
 
 
 ## Set up Instructions
