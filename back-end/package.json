@@ -1,0 +1,42 @@
+{
+  "name": "software-technology-2020-team22-fastcharger",
+  "version": "1.0.0",
+  "description": "Project for software engineering team 22",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_ENV=test && mocha",
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgePag4028/Software-Technology-2020-team22-FastCharger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeorgePag4028/Software-Technology-2020-team22-FastCharger/issues"
+  },
+  "homepage": "https://github.com/GeorgePag4028/Software-Technology-2020-team22-FastCharger#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "datejs": "^1.0.0-rc3",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "figlet": "^1.5.0",
+    "formidable": "^1.2.2",
+    "json-2-csv": "^3.10.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7"
+  }
+}

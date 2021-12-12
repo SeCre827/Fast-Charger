@@ -1,0 +1,38 @@
+endpoints: 
+starting endpoint: https://localhost:8765/evcharge/api
+
+diaxeiristika endpoints:
+
+1)	
+	{baseURL}/admin/usermod/:username/:password 
+	Υποστηρίζει τη μέθοδο POST για την προσθήκη νέου χρήστη ή την αλλαγή password αν ο χρήστης
+ 	υπάρχει ήδη.
+
+2)      {baseURL}/admin/users/:username
+ 	Υποστηρίζει τη μέθοδο GET για την ανάγνωση των στοιχείων του συγκεκριμένου χρήστη
+
+3) 	{baseURL}/admin/system/sessionsupd
+	Υποστηρίζει τη μέθοδο POST για το «ανέβασμα» αρχείου CSV με δεδομένα γεγονότων φόρτισης.
+	Το αρχείο πρέπει να είναι κωδικοποιημένο ως πεδίο "file" σε multipart/form-data κωδικοποίηση.
+
+BOHΘΗΤΙΚΑ
+
+1)  	{baseURL}/admin/healthcheck:
+	: Υποστηρίζει τη μέθοδο GET και επιβεβαιώνει την πλήρη συνδεσιμότητα (end-to-end connectivity) 
+	μεταξύ του χρήστη και της βάσης δεδομένων. Το backend, δηλαδή, θα πρέπει να ελέγξει τη συνδεσιμότητα 
+	με τη ΒΔ για να απαντήσει στο αίτημα. 
+	Σε περίπτωση επιτυχούς σύνδεσης επιστρέφεται το json object: {"status":"OK"}, 
+	διαφορετικά επιστρέφεται {"status":"failed"}.
+
+2) 	{baseURL}/admin/resetsessions: 
+	Υποστηρίζει τη μέθοδο POST και προβαίνει σε αρχικοποίηση του πίνακα γεγονότων φόρτισης 
+ 	(διαγραφή όλων των γεγονότων φόρτισης), καθώς και αρχικοποίηση του default διαχειριστικού 
+ 	λογαριασμού (username: admin, password: petrol4ever). 
+ 	Σε περίπτωση επιτυχίας, επιστρέφεται  το json object: {"status":"OK"}, 
+	διαφορετικά επιστρέφεται {"status":"failed"}.
+
+controllers: 
+user
+session
+data analysis
+

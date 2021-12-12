@@ -1,0 +1,2 @@
+paymentMethod,amount,energy,isInOffers,time,createdAt,updatedAt,idUser,idCharger,idStation,idProvider,idVehicle
+card,60.72,276,0,263.17,2020-06-15 10:51:18,2022-06-15 10:51:18,1,1,1,1,1
